@@ -1,0 +1,24 @@
+Heston price: Fourier 2.2385 | Monte Carlo 2.2433 +/- 0.0092
+
+Training deep (vol hidden) ...
+  iter     1  risk   10.0775  (  0.2s)
+  iter   500  risk    0.3094  ( 46.6s)
+  iter  1000  risk    0.1707  ( 95.6s)
+  iter  1500  risk    0.1689  (147.2s)
+  iter  2000  risk    0.1681  (196.2s)
+
+Training deep (vol as state) ...
+  iter     1  risk    7.7058  (  0.1s)
+  iter   500  risk    0.2826  ( 55.2s)
+  iter  1000  risk    0.1604  (107.9s)
+  iter  1500  risk    0.1577  (168.7s)
+  iter  2000  risk    0.1566  (226.6s)
+
+Heston test set, cost = 0.0:
+                               mean          std        VaR95       CVaR95       CVaR99  entropic(1)  mean_std(1)
+BS delta (const vol)        -0.0131       0.5175       0.8997       1.3128       1.9833       0.1717       0.5307
+BS delta (vol_t)            -0.0089       0.5193       0.9291       1.2142       1.6890       0.1570       0.5282
+min-variance delta          -0.0314       0.5155       0.9079       1.2151       1.6967       0.1746       0.5470
+deep (vol hidden)           -0.0189       0.5260       0.8498       1.1931       1.7642       0.1654       0.5449
+deep (vol as state)         -0.0168       0.5083       0.8698       1.1826       1.6631       0.1554       0.5251
+  saved results/step7_heston_hist_c0.png
