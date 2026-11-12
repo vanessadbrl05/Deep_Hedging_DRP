@@ -1,0 +1,11 @@
+Black-Scholes price of ATM 30-day call: 2.2871
+Monte Carlo price under Q:              2.2915 +/- 0.0096
+
+Discrete delta hedge, N=30, 20000 paths, no costs:
+                mean          std        VaR95       CVaR95       CVaR99  entropic(1)  mean_std(1)
+delta         0.0008       0.3588       0.6015       0.8362       1.2316       0.0670       0.3580
+  saved results/step3_delta_pnl_hist.png
+
+PnL std vs N: N=5: 0.8413, N=10: 0.5980, N=20: 0.4330, N=30: 0.3560, N=60: 0.2544, N=120: 0.1814, N=240: 0.1290
+log-log slope = -0.483  (theory: -0.5)
+  saved results/step3_error_vs_rebalancing.png

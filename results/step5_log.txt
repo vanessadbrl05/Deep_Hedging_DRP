@@ -1,0 +1,19 @@
+Training deep hedger (risk=mean_std, frictionless)...
+  iter     1  risk    4.1074  (  0.1s)
+  iter   250  risk    0.5851  ( 22.0s)
+  iter   500  risk    0.3756  ( 40.8s)
+  iter   750  risk    0.3656  ( 60.0s)
+  iter  1000  risk    0.3643  ( 77.3s)
+  iter  1250  risk    0.3617  ( 95.1s)
+  iter  1500  risk    0.3618  (113.5s)
+  iter  1750  risk    0.3614  (132.1s)
+  iter  2000  risk    0.3613  (151.1s)
+
+Frictionless test set (20,000 paths):
+                mean          std        VaR95       CVaR95       CVaR99  entropic(1)  mean_std(1)
+delta         0.0008       0.3588       0.6015       0.8362       1.2316       0.0670       0.3580
+deep          0.0026       0.3633       0.6087       0.8435       1.2337       0.0666       0.3607
+mean |delta_net - delta_BS| over all steps: 0.0076
+  saved results/step5_pnl_hist.png
+  saved results/step5_policy_vs_delta.png
+  saved results/step5_training_curve.png
